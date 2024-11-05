@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Employees</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body{
+    margin-left: 0;
+    padding: 0;
+    background-color: black;
+}
+#container{
+    margin: 50px;
+    width: 100%;
+    height: 100%;
+}
+#top-heading-p{
+color: #FFFFFF;
+width: 182px;
+height: 29px;
+top: 96px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.05px;
+text-align: left;
+}
+/* #top-heading{
+
+} */
+div .name{
+width: 531px;
+height: 96px;
+top: 173px;
+left: 58px;
+gap: 0px;
+border-radius: 5px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+label{
+    color: white;
+}
+
+div .profession{
+    width: 531px;
+    height: 96px;
+    top: 173px;
+    left: 647px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+}
+
+div .age{
+width: 451px;
+height: 96px;
+top: 173px;
+left: 1220px;
+gap: 0px;
+border-radius: 5px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+
+input[type="text"]{
+    border: 1px solid #FFFFFF;
+    background-color: black;   
+    border-radius: 3px;
+    width:400px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 8px;
+    color: #FFFFFF;
+}
+
+input #name{
+    width: 119px;
+    height: 25px;
+    top: 229px;
+    left: 71px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: left;
+color: #FFFFFF;
+}
+
+input #profession{
+    width: 196px;
+    height: 24px;
+    top: 229px;
+    left: 668px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+color: #FFFFFF;        
+}
+
+input #age{
+    width: 196px;
+height: 24px;
+top: 230px;
+left: 1250px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: left;
+color: #FFFFFF;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#submit-button{
+    background-color: #FFFFFF;
+    width: 226px;
+height: 58px;
+top: 308px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+cursor: pointer;
+}
+
+#added-employees{
+color: #FFFFFF;
+width: 205px;
+height: 29px;
+top: 491px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.05px;
+text-align: left;
+margin-top: 40px;
+}
+
+#message{
+    margin-top: 40px;
+}
+
+.error-message{
+    color: #FF4343;
+    width: 881px;
+height: 29px;
+top: 414px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.05px;
+text-align: left;
+
+}
+
+.success-message{
+    color: #43FF78;
+    width: 314px;
+height: 29px;
+top: 414px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.05px;
+text-align: left;
+
+}
+
+
+.delete-user{
+    width: 162px;
+height: 42px;
+top: 576px;
+left: 624px;
+gap: 0px;
+border-radius: 20px;
+opacity: 0px;
+background-color: #FFFFFF;
+cursor: pointer;
+}
+
+#list-container{
+    width: 100%;
+    height: 100%;
+}
+
+.list-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.inner-list-div{
+width: 539px;
+height: 59px;
+top: 568px;
+left: 58px;
+gap: 0px;
+border-radius: 10px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+border: 1px solid #FFFFFF;
+padding: 20px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#count-list{
+    width: 20px;
+    height: 25px;
+    top: 584px;
+    left: 71px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+    color: #FFFFFF;
+        
+}
+
+#name-list{
+    width: 119px;
+height: 25px;
+top: 584px;
+left: 125px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: left;
+color: #FFFFFF;
+}
+
+#profession-list{
+    width: 196px;
+height: 24px;
+top: 585px;
+left: 278px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: left;
+color: #FFFFFF;
+}
+
+#age-list{
+    width: 67px;
+height: 25px;
+top: 585px;
+left: 508px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: left;
+color: #FFFFFF;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="top-heading">
+           <p id="top-heading-p">New Employees</p>
+        </div>
+
+        <div id="form">
+           <div class="name">
+            <label for="name">Enter Name</label><br>
+            <input type="text" id="name">
+           </div>
+           <div class="profession">
+            <label for="profession">Enter Profession</label><br>
+            <input type="text" id="profession">
+           </div>
+           <div class="age">
+            <label for="age">Enter Age</label><br>
+            <input type="text" id="age">
+           </div>
+          
+        </div>
+        <button id="submit-button">Add User</button> 
+        <p id="message"></p>
+
+        <p id="added-employees">Added Employees</p>
+
+         <p id="employee-count" class="employee-count" style="color:#FFFFFF80;">You have 0 Employees</p>
+
+
+         <div id="list-container">
+         </div>
+
+     </div>
+
+      <script>
+
+        let count=0;
+        let x=0;
+      const nameInput=document.getElementById("name");
+      const professionInput=document.getElementById("profession");
+      const ageInput=document.getElementById("age");
+      const submitbutton=document.getElementById("submit-button");
+      const SuccessOrErrorMessage=document.getElementById("message");
+      const EmployeeListMessage=document.getElementById("employee-count");
+      const listContainer=document.getElementById("list-container");
+
+                 // Submit Button
+      submitbutton.addEventListener("click", () =>{
+        const name=nameInput.value;
+        const profession=professionInput.value;
+        const age=ageInput.value;
+        if(name==="" || profession==="" || age==="")
+        {
+          
+          if(SuccessOrErrorMessage.classList.contains("success-message"))
+          {
+            SuccessOrErrorMessage.classList.remove("success-message");
+            SuccessOrErrorMessage.textContent="Error : Please Make sure All the fields are filled before adding in an employee !";
+            SuccessOrErrorMessage.classList.add("error-message");
+          }
+          else{
+            SuccessOrErrorMessage.textContent="Error : Please Make sure All the fields are filled before adding in an employee !";
+            SuccessOrErrorMessage.classList.add("error-message");
+          }
+          
+        }
+        else{
+            if(SuccessOrErrorMessage.classList.contains("error-message"))
+            {
+              SuccessOrErrorMessage.classList.remove("error-message");
+              SuccessOrErrorMessage.textContent="Success : Employee Added!";
+              SuccessOrErrorMessage.classList.add("success-message");
+            }
+            else
+              {
+                SuccessOrErrorMessage.textContent="Success : Employee Added!";
+                SuccessOrErrorMessage.classList.add("success-message");
+              }
+              count++;
+              x++;
+            EmployeeListMessage.style.display="none";
+            const ListDiv=document.createElement("div");
+            ListDiv.classList.add("list-div");
+            ListDiv.innerHTML=`
+            <div class="inner-list-div">
+              <div class="count-list" id="count-list">${count}</div>
+              <div id="name-list">Name: ${name}</div>
+              <div id="profession-list">Profession: ${profession}</div>
+              <div id="age-list">Age: ${age}</div>    
+            </div>
+            <div>
+              <button class="delete-user">Delete User</button>
+             </div> 
+            `;
+            document.getElementById("list-container").appendChild(ListDiv);
+          
+            nameInput.value="";
+            professionInput.value="";
+            ageInput.value="";
+        }
+        
+      })
+
+                 //Delete Button
+    listContainer.addEventListener("click", (e) =>{
+        if(SuccessOrErrorMessage.classList.contains("success-message"))
+          {
+            SuccessOrErrorMessage.classList.remove("success-message");
+            SuccessOrErrorMessage.textContent="";
+          }
+          if(SuccessOrErrorMessage.classList.contains("error-message"))
+            {
+              SuccessOrErrorMessage.classList.remove("error-message");
+              SuccessOrErrorMessage.textContent="";
+            }
+
+     if(e.target.classList.contains("delete-user"))
+     {
+        const div=e.target.parentElement.parentElement;
+        listContainer.removeChild(div);
+        x--;
+     }
+     if(x==0)
+     {
+        EmployeeListMessage.style.display="";
+        count=x;
+     }
+     
+  })
+   
+      </script>  
+</body>
+</html>
